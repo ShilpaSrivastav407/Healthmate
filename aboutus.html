@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:#0188df;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size:25px;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            gap: 40px; 
+        }
+
+        .about-box {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            flex: 1;
+        }
+
+        .about-text h2 {
+            color: #333;
+            font-size: 2rem;
+        }
+
+        .about-text p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .about-image img {
+              max-width: 600px;
+              height: auto;   
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-box {
+                max-width: 100%;
+            }
+
+            .about-image {
+                margin-top: 20px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position:static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="about-container">
+        <div class="about-box">
+            <div class="about-text">
+                <h2>About HealthMate</h2>
+                <p>
+                    <strong>HealthMate</strong> is an innovative healthcare website designed to help individuals take charge of their health and well-being. It offers a comprehensive platform where users can track vital health metrics such as heart rate, steps, calories burned, sleep patterns, and more. The website provides personalized wellness plans based on individual health data, making it easy to set goals and monitor progress. HealthMate also features access to educational resources, including articles and guides on nutrition, exercise, and mental health. Additionally, it allows users to schedule virtual consultations with healthcare professionals, ensuring that help is always within reach. Whether you're looking to manage a chronic condition, improve your fitness, or maintain a healthy lifestyle, HealthMate serves as a reliable, all-in-one solution for your health needs.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-image">
+            <img src="doctors-nurses.jpg" alt="HealthMate Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>
